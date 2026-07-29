@@ -1,0 +1,7 @@
+[
+  {"id": 1, "name": "Alice", "phone": "9876543210", "city": "Pune"},
+  {"id": 2, "name": "Bob", "city": "Mumbai"},
+  {"id": 3, "name": "Chirag", "phone": "9123456780", "city": "Nashik"},
+  {"id": 4, "name": "Divya", "city": "Delhi"},
+  {"id": 5, "name": "Esha", "phone": "9988776655"}
+]
