@@ -1,51 +1,30 @@
-Cafe Sales Data Analysis & Business Intelligence
-Project Overview
-This project presents an end-to-end Exploratory Data Analysis (EDA) based on a cafe's daily transaction records. The primary objective is to transform raw, inconsistent sales data into actionable business intelligence. The analysis provides data-driven recommendations to help management optimize inventory, improve staff scheduling, and maximize overall revenue.
+# Cafe Sales Data Analysis & Business Intelligence
 
-Technical Stack
-Language: Python
+## Project Overview
+An end-to-end Exploratory Data Analysis (EDA) on daily cafe transaction records to transform raw sales data into actionable business intelligence for optimizing inventory, staff scheduling, and revenue.
 
-Data Manipulation & Engineering: Pandas, NumPy
+---
 
-Data Visualization: Matplotlib, Seaborn
+## Technical Stack
+* **Language:** Python
+* **Data Manipulation:** Pandas, NumPy
+* **Data Visualization:** Matplotlib, Seaborn
+* **Environment:** Jupyter Notebook
 
-Environment: Jupyter Notebook
+---
 
-Data Engineering & Memory Optimization
-Before conducting the analysis, rigorous data cleaning and preprocessing pipelines were implemented to ensure data integrity and computational efficiency:
+## Data Engineering & Memory Optimization
+* **Anomaly Handling:** Parsed dirty text strings (e.g., hidden `ERROR` values) into valid datetime objects.
+* **Missing Value Imputation:** Handled missing categorical data across location/payment columns without dropping rows.
+* **Memory Reduction:** Converted low-cardinality text columns (`Item`, `Payment Method`, `Location`) to pandas category types to reduce memory footprint.
 
-Anomaly Detection & Handling: Identified and parsed dirty text strings (e.g., hidden ERROR values) within temporal data, safely coercing them into valid datetime objects.
+---
 
-Missing Value Imputation: Strategically handled missing categorical data across location and payment columns without arbitrarily dropping rows, preserving the statistical significance of the dataset.
+## Key Business Insights & Recommendations
 
-Memory Footprint Reduction: Optimized data structures by converting low-cardinality text columns (Item, Payment Method, Location) from standard object types to pandas category types, significantly reducing the dataset's memory usage and improving computational speed.
+### 1. Volume vs. Revenue Dynamics
+* **Observation:** Coffee drives maximum foot traffic, while food items like Salads generate the highest total revenue.
+* **Business Impact:** Use high-volume beverages as traffic drivers and train POS staff to cross-sell high-margin food items.
 
-Key Business Insights & Recommendations
-1. Volume vs. Revenue Dynamics
-Observation: Coffee drives the highest transaction volume (foot traffic), whereas food items like Salads generate the highest total overall revenue.
-
-Business Impact: Recommends utilizing high-volume beverages as traffic drivers while training point-of-sale staff to actively cross-sell high-margin food items.
-
-2. Operational Logistics (In-Store vs. Takeaway)
-Observation: Customer behavior is heavily item-dependent. Beverages and baked goods lean toward Takeaway, while full meal items are preferred In-Store.
-
-Business Impact: Informs store layout optimization—suggesting the relocation of the beverage pick-up counter closer to the exit to expedite Takeaway orders, while reserving dining space for higher-revenue In-Store customers.
-
-3. Average Order Value (AOV) Analysis
-Observation: The Average Order Value remains statistically identical across all payment methods (Cash, Credit Card, Digital Wallets).
-
-Business Impact: Advises management to avoid investing in costly promotions aimed at shifting payment behaviors, focusing instead on overarching upsell strategies.
-
-4. Time-Series & Staffing Trends
-Observation: Analyzed customer traffic patterns by day of the week and tracked average daily revenue across generalized monthly cycles.
-
-Business Impact: Provides a quantitative foundation for labor management, allowing the business to align its highest-performing staff and inventory prep with empirically proven peak hours and days.
-
-How to Run the Project
-Clone this repository to your local machine.
-
-Install the required dependencies using pip install pandas numpy matplotlib seaborn
-
-Launch the environment via Jupyter Notebook.
-
-Open the FDA-Practice.ipynb file and execute the cells sequentially to view the data pipeline and visualizations.
+### 2. Operational Logistics (In-Store vs. Takeaway)
+* **Observation:** Customer behavior is heavily item-dependent—beverages and baked goods skew toward Takeaway, whereas full meals dominate In-Store sales.
