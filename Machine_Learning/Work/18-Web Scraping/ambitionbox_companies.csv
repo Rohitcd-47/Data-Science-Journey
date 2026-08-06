@@ -1,0 +1,201 @@
+Company_Name,Rating,Reviews,Domain,Primary_Location
+TCS,3.3,1.2L,IT Services & Consulting,Bengaluru
+Accenture,3.7,75.7k,IT Services & Consulting,Bengaluru
+Wipro,3.6,66.8k,IT Services & Consulting,Hyderabad
+Cognizant,3.7,63.1k,IT Services & Consulting,Hyderabad
+Capgemini,3.6,55.2k,IT Services & Consulting,Bengaluru
+HDFC Bank,3.8,54.3k,Banking,Mumbai
+Infosys,3.5,50.2k,IT Services & Consulting,Bengaluru
+HCLTech,3.4,47.4k,IT Services & Consulting,Chennai
+ICICI Bank,4.0,47k,Banking,Mumbai
+Tech Mahindra,3.3,44.5k,IT Services & Consulting,Hyderabad
+Genpact,3.6,43.7k,Analytics & KPO,Hyderabad
+TP,3.9,40k,BPO,Mumbai
+Axis Bank,3.6,34.4k,Banking,Mumbai
+Jio,4.4,34.2k,Telecom,Mumbai
+Concentrix Corporation,3.5,33.1k,BPO,Bengaluru
+Amazon,3.9,32.6k,Internet,Bengaluru
+Reliance Retail,3.9,27.9k,Retail,Mumbai
+iEnergizer,4.5,27.7k,BPO,Noida
+LTM Limited,3.6,27.3k,IT Services & Consulting,Bengaluru
+HDB Financial Services,3.9,26.4k,NBFC,Mumbai
+IBM,3.9,26.4k,IT Services & Consulting,Bengaluru
+Larsen & Toubro Limited,3.9,24.6k,Engineering & Construction,Mumbai
+Deloitte,3.6,24.2k,Management Consulting,Hyderabad
+Kotak Mahindra Bank,3.6,23.2k,Banking,Mumbai
+Reliance Industries,4.0,20.8k,Oil & Gas,Jamnagar
+Vodafone Idea,3.9,17.9k,Telecom,Pune
+Bharti Airtel,3.8,17.5k,Telecom,Gurugram
+BYJU'S,3.2,16.4k,EdTech,Bengaluru
+WNS,3.3,15.7k,IT Services & Consulting,Pune
+IDFC FIRST Bank,4.0,15.6k,Banking,Mumbai
+Ernst & Young,3.4,15.1k,Management Consulting,Bengaluru
+IndusInd Bank,3.4,14.7k,Banking,Mumbai
+AU Small Finance Bank,3.8,14.6k,Banking,Jaipur
+Tata Motors,4.1,14.5k,Automobile,Pune
+Bajaj Finserv,3.9,13.7k,NBFC,Pune
+Flipkart,3.9,13.4k,Internet,Bengaluru
+Muthoot FinCorp,4.5,13.4k,NBFC,Bengaluru
+PwC,3.3,13.2k,Management Consulting,Bengaluru
+Mahindra & Mahindra,4.0,12.5k,Automobile,Pune
+HDFC Life,3.8,12.5k,Insurance,Mumbai
+Infosys BPM,3.5,12.4k,BPO,Bengaluru
+DXC Technology,3.6,12.3k,IT Services & Consulting,Bengaluru
+Bandhan Bank,3.6,11.7k,Banking,Kolkata
+Digitide Solutions,3.4,10.7k,IT Services & Consulting,Hyderabad
+Yes Bank,3.7,10.5k,Banking,Mumbai
+Mphasis,3.3,10.5k,IT Services & Consulting,Bengaluru
+Tata Steel,4.0,10.2k,Iron & Steel,Jamshedpur
+Quess,3.8,10.1k,Recruitment,Bengaluru
+Asian Paints,3.9,9.9k,Chemicals,Mumbai
+UltraTech Cement,4.1,9.8k,Building Material,Mumbai
+Startek,3.0,9.8k,BPO,Bengaluru
+Maruti Suzuki,4.1,9.8k,Automobile,Gurugram
+Bajaj Finance,3.9,9.6k,NBFC,Pune
+Paytm,3.2,9.6k,FinTech,Noida
+Shriram Finance,3.9,9.4k,NBFC,Chennai
+Sutherland Global Services,3.3,9.4k,BPO,Chennai
+Equitas Small Finance Bank,4.3,9.2k,Banking,Chennai
+Coforge,3.3,9.2k,IT Services & Consulting,Hyderabad
+Wells Fargo,3.6,9k,Financial Services,Bengaluru
+Cipla,4.1,8.8k,Pharma,Mumbai
+EXL Service,3.6,8.8k,Analytics & KPO,Noida
+Ericsson,3.9,8.6k,Telecom,Noida
+Samsung,3.9,8.5k,Consumer Electronics & Appliances,Noida
+Dr. Reddy's,4.0,8.4k,Pharma,Hyderabad
+Optum Global Solutions,4.0,8.2k,IT Services & Consulting,Hyderabad
+JSW Steel,3.9,8.2k,Iron & Steel,Ballari
+Delhivery,3.7,8.1k,Logistics,Gurugram
+JPMorgan Chase & Co.,3.8,8k,Financial Services,Bengaluru
+ICICI Prudential Life Insurance,3.9,8k,Insurance,Mumbai
+Hexaware Technologies,3.4,8k,IT Services & Consulting,Chennai
+Ujjivan Small Finance Bank,4.0,7.9k,Banking,Bengaluru
+Sun Pharmaceutical Industries,4.0,7.9k,Pharma,Vadodara
+Jana Small Finance Bank,3.7,7.9k,Banking,Bengaluru
+Zydus Lifesciences,4.0,7.8k,Pharma,Ahmedabad
+Ekart Logistics,3.9,7.8k,Logistics,Bengaluru
+HGS,3.7,7.7k,Emerging Technologies,Bengaluru
+KPMG India,3.4,7.6k,Management Consulting,Bengaluru
+Amazon Development Centre India,3.8,7.6k,Internet,Hyderabad
+Lupin,4.1,7.6k,Pharma,Pune
+Axis Max Life Insurance,4.0,7.5k,Insurance,New Delhi
+ITC,3.8,7.4k,FMCG,Bengaluru
+L&T Construction,4.0,7.4k,Engineering & Construction,Chennai
+Hindustan Unilever,4.2,7.4k,FMCG,Mumbai
+Megha Engineering & Infrastructures,3.9,7.2k,Engineering & Construction,Hyderabad
+Tata Projects,4.2,7.1k,Engineering & Construction,Mumbai
+Cholamandalam Investment & Finance,3.8,6.9k,Financial Services,Chennai
+Bajaj Life Insurance,3.8,6.9k,Insurance,Pune
+L&T Technology Services,3.1,6.9k,IT Services & Consulting,Bengaluru
+FIS,3.7,6.7k,FinTech,Pune
+Oracle,3.3,6.7k,Software Product,Bengaluru
+JLL,4.1,6.7k,Real Estate,Gurugram
+Omega Healthcare,3.7,6.6k,BPO,Chennai
+Muthoot Finance,3.7,6.6k,NBFC,Bengaluru
+IIFL Finance,4.0,6.5k,NBFC,Mumbai
+eClerx,3.1,6.5k,IT Services & Consulting,Pune
+Indian Army,4.7,6.4k,Defence & Aerospace,New Delhi
+DMart,3.9,6.4k,Retail,Mumbai
+PolicyBazaar,3.8,6.4k,Internet,Gurugram
+Indiamart Intermesh,3.6,6.3k,Internet,Noida
+Piramal Finance,4.2,6.3k,NBFC,Mumbai
+Virtusa Consulting Services,3.7,6.3k,IT Services & Consulting,Hyderabad
+HSBC Group,3.8,6.2k,Financial Services,Bengaluru
+SMFG India Credit,3.9,6.2k,NBFC,Mumbai
+Access Healthcare,3.7,6.2k,BPO,Chennai
+HCL Group,3.5,6.1k,IT Services & Consulting,Chennai
+BigBasket,3.9,6k,Internet,Bengaluru
+Manappuram Finance,3.9,6k,NBFC,Bengaluru
+GlobalLogic,3.5,6k,IT Services & Consulting,Hyderabad
+ICICI Lombard General Insurance Company,3.5,6k,Insurance,Mumbai
+Siemens,4.0,6k,Industrial Automation,Bengaluru
+Apollo Hospitals,4.0,6k,Healthcare,Chennai
+Firstsource Solutions,3.5,6k,BPO,Bengaluru
+Aurobindo Pharma,4.0,5.9k,Pharma,Hyderabad
+Tata Capital,4.0,5.9k,NBFC,Mumbai
+Shapoorji Pallonji Group,4.1,5.9k,Engineering & Construction,Mumbai
+UST,3.7,5.9k,IT Services & Consulting,Bengaluru
+Swiggy,3.7,5.9k,Internet,Bengaluru
+Standard Chartered,3.6,5.8k,Banking,Chennai
+Mahindra Finance,3.8,5.8k,NBFC,Mumbai
+Bosch Global Software Technologies,3.7,5.8k,IT Services & Consulting,Bengaluru
+Udaan,3.9,5.7k,Internet,Bengaluru
+Citicorp,3.6,5.7k,Financial Services,Pune
+Ashok Leyland,4.0,5.7k,Automobile,Chennai
+Hero MotoCorp,4.1,5.6k,Automobile,Gurugram
+CGI Inc,4.0,5.6k,IT Services & Consulting,Bengaluru
+SBI Cards & Payment Services,3.6,5.5k,Financial Services,Gurugram
+NTT DATA,3.8,5.5k,IT Services & Consulting,Bengaluru
+Kalpataru Projects International,4.1,5.5k,Engineering & Construction,Mumbai
+BNY,3.6,5.4k,Financial Services,Pune
+Nagarjuna Construction Company,4.0,5.4k,Engineering & Construction,Hyderabad
+IQVIA,3.7,5.4k,Clinical Research,Bengaluru
+Cyient,3.6,5.4k,IT Services & Consulting,Hyderabad
+Schneider Electric,4.1,5.4k,Industrial Automation,Bengaluru
+SBI Life Insurance Company,3.7,5.3k,Insurance,Mumbai
+CBRE,4.1,5.3k,Real Estate,Hyderabad
+JustDial,3.5,5.3k,Internet,Noida
+TVS Motor,3.8,5.3k,Automobile,Hosur
+State Bank of India,3.9,5.2k,Banking,Mumbai
+Persistent Systems,3.6,5.2k,IT Services & Consulting,Pune
+KEC International,4.0,5.2k,Engineering & Construction,Mumbai
+ITC Infotech,3.8,5.1k,IT Services & Consulting,Bengaluru
+Amdocs,3.6,5.1k,Software Product,Pune
+Atos,3.8,5.1k,IT Services & Consulting,Pune
+vivo,4.0,5k,Consumer Electronics & Appliances,Noida
+Varun Beverages,4.0,5k,Beverage,New Delhi
+Utkarsh Small Finance Bank,3.6,5k,Banking,Varanasi
+JBM Group,3.9,5k,Auto Components,Gurugram
+Ecom Express,4.1,4.9k,Logistics,Gurugram
+Randstad,3.7,4.9k,Recruitment,Hyderabad
+Lenskart,3.4,4.8k,Internet,New Delhi
+Nagarro,3.9,4.8k,IT Services & Consulting,Gurugram
+EY Global Delivery Services ( EY GDS),3.5,4.8k,IT Services & Consulting,Bengaluru
+Bosch,4.1,4.8k,Auto Components,Bengaluru
+Hetero,3.9,4.8k,Pharma,Hyderabad
+Intas Pharmaceuticals,4.1,4.8k,Pharma,Ahmedabad
+Eviden,3.6,4.8k,IT Services & Consulting,Pune
+Havells,3.9,4.8k,Electrical Equipment,Noida
+L&T Finance,3.9,4.8k,NBFC,Mumbai
+Aditya Birla Fashion and Retail,4.1,4.8k,Fashion & Textile,Bengaluru
+R1 RCM,3.8,4.7k,BPO,Hyderabad
+Tata AIA Life Insurance,3.8,4.7k,Insurance,Mumbai
+Hewlett Packard Enterprise,4.0,4.7k,IT Services & Consulting,Bengaluru
+Cars24,3.4,4.7k,Internet,Gurugram
+Mahindra Logistics,3.7,4.7k,Logistics,Mumbai
+Berger Paints,3.7,4.7k,Chemicals,Kolkata
+Dell,3.8,4.6k,Consumer Electronics & Appliances,Bengaluru
+Deutsche Bank,3.8,4.6k,Banking,Pune
+Home Credit Finance,4.0,4.6k,NBFC,Gurugram
+Motilal Oswal Financial Services,3.7,4.6k,Financial Services,Mumbai
+OPPO,3.9,4.5k,Consumer Electronics & Appliances,Greater Noida
+TeamLease Services,3.9,4.5k,Recruitment,Bengaluru
+Hyundai Motor India Limited,4.1,4.5k,Automobile,Chennai
+VE Commercial Vehicles,3.9,4.5k,Automobile,Indore
+Thermax Limited,4.2,4.4k,Industrial Machinery,Pune
+Jubilant Foods Works,3.7,4.4k,Hospitality,Noida
+Macleods Pharmaceuticals,3.7,4.4k,Pharma,Mumbai
+Carelon Global Solutions,4.0,4.4k,IT Services & Consulting,Bengaluru
+Jindal Steel Limited,3.9,4.3k,Iron & Steel,Angul
+Aakash Educational Services,3.2,4.3k,Education & Training,New Delhi
+State Street Corporation,3.5,4.3k,Financial Services,Bengaluru
+Hindalco Industries,4.2,4.3k,Metals & Mining,Sambalpur
+Bajaj Auto,3.8,4.3k,Automobile,Pune
+LG Electronics,3.8,4.3k,Consumer Electronics & Appliances,Pune
+HDFC ERGO General Insurance,3.9,4.2k,Insurance,Mumbai
+DCB Bank,3.8,4.2k,Banking,Mumbai
+Kogta Financial India Limited,4.6,4.2k,NBFC,Jaipur
+Royal Enfield,4.2,4.2k,Automobile,Chennai
+RBL Bank,3.5,4.2k,Banking,Mumbai
+John Deere,4.0,4.2k,Industrial Machinery,Pune
+Publicis Sapient,3.2,4.1k,IT Services & Consulting,Bengaluru
+Cloudnine Hospital,4.5,4.1k,Healthcare,Bengaluru
+Tata Communications,3.8,4.1k,Telecom,Pune
+Cummins,4.3,4.1k,Industrial Machinery,Pune
+Pidilite Industries,4.2,4.1k,Chemicals,Mumbai
+Alembic Pharmaceuticals,3.9,4.1k,Pharma,Vadodara
+Grasim Industries,4.0,4.1k,Building Material,Bharuch
+Aditya Birla Sun Life Insurance,4.0,4.1k,Insurance,Mumbai
+Bank of America,4.1,4k,Banking,Gurugram
+PNB MetLife,3.3,4k,Insurance,New Delhi
+American Express,4.1,4k,Financial Services,Gurugram

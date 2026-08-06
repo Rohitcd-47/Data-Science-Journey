@@ -1,0 +1,18 @@
+{
+  "user": "Alice",
+  "orders": [
+    {
+      "id": 101,
+      "items": [
+        {"sku": "A1", "qty": 2, "price": 250},
+        {"sku": "A2", "qty": 1, "price": 999}
+      ]
+    },
+    {
+      "id": 102,
+      "items": [
+        {"sku": "B1", "qty": 3, "price": 150}
+      ]
+    }
+  ]
+}
