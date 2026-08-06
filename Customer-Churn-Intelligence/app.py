@@ -40,34 +40,32 @@ st.set_page_config(
 )
 
 # ==========================================
-# 3. APPLE DESIGN SYSTEM INJECTION (CSS)
+# 3. APPLE WHITE DESIGN SYSTEM INJECTION (CSS)
 # ==========================================
-apple_css = """
+apple_light_css = """
 <style>
 /* Import San Francisco / Inter System Font */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 html, body, [class*="css"] {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", sans-serif !important;
-    background-color: #000000 !important;
-    color: #f5f5f7 !important;
+    background-color: #f5f5f7 !important;
+    color: #1d1d1f !important;
 }
 
 /* Background & Padding */
 .main .block-container {
     padding-top: 2rem !important;
     padding-bottom: 3rem !important;
-    max-width: 1100px !important;
+    max-width: 1150px !important;
 }
 
-/* Apple Header Style */
+/* Apple Light Header Style */
 .hero-title {
     font-size: 3rem !important;
     font-weight: 700 !important;
     letter-spacing: -0.015em !important;
-    background: linear-gradient(180deg, #FFFFFF 0%, #A1A1A6 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #1d1d1f !important;
     margin-bottom: 0.2rem !important;
 }
 
@@ -78,90 +76,99 @@ html, body, [class*="css"] {
     margin-bottom: 2rem !important;
 }
 
-/* Glassmorphism Input Cards */
+/* Apple Light Glass Cards */
 div[data-testid="stColumn"] {
-    background: rgba(22, 22, 23, 0.8) !important;
-    border: 1px solid rgba(255, 255, 255, 0.08) !important;
-    border-radius: 18px !important;
-    padding: 22px !important;
-    backdrop-filter: blur(20px) !important;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    background: #ffffff !important;
+    border: 1px solid rgba(0, 0, 0, 0.08) !important;
+    border-radius: 20px !important;
+    padding: 24px !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 div[data-testid="stColumn"]:hover {
-    border-color: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06) !important;
 }
 
 /* Form Section Headers */
 .section-header {
-    font-size: 1rem !important;
+    font-size: 1.05rem !important;
     font-weight: 600 !important;
-    color: #2997ff !important;
+    color: #0071e3 !important;
     text-transform: uppercase !important;
     letter-spacing: 0.05em !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 16px !important;
 }
 
-/* Apple Primary Button */
+/* Apple Blue Primary Button */
 div.stButton > button {
     background: #0071e3 !important;
     color: #ffffff !important;
     border-radius: 980px !important;
-    padding: 12px 28px !important;
+    padding: 14px 28px !important;
     font-size: 1.05rem !important;
     font-weight: 500 !important;
     border: none !important;
     transition: all 0.2s ease-in-out !important;
-    box-shadow: 0 4px 14px 0 rgba(0, 113, 227, 0.39) !important;
+    box-shadow: 0 4px 14px 0 rgba(0, 113, 227, 0.3) !important;
     width: 100% !important;
 }
 
 div.stButton > button:hover {
     background: #0077ed !important;
     transform: scale(1.01) !important;
-    box-shadow: 0 6px 20px 0 rgba(0, 113, 227, 0.5) !important;
+    box-shadow: 0 6px 20px 0 rgba(0, 113, 227, 0.4) !important;
 }
 
-/* Input elements styling */
+/* Label & Subtext styling */
 label {
-    color: #a1a1a6 !important;
-    font-size: 0.85rem !important;
-    font-weight: 500 !important;
+    color: #1d1d1f !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
 }
 
-/* Custom Output Result Card */
+.hinglish-subtext {
+    font-size: 0.8rem !important;
+    color: #6e6e73 !important;
+    margin-top: -8px !important;
+    margin-bottom: 14px !important;
+    font-style: italic;
+}
+
+/* Output Result Cards (Light Theme) */
 .result-card {
     border-radius: 20px;
     padding: 28px;
-    margin-top: 20px;
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 24px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.05);
 }
 
 .result-card.low {
-    background: linear-gradient(135deg, rgba(48, 209, 88, 0.12) 0%, rgba(22, 22, 23, 0.9) 100%);
-    border-color: rgba(48, 209, 88, 0.3);
+    background: #f2faf1;
+    border-color: #34c759;
 }
 
 .result-card.medium {
-    background: linear-gradient(135deg, rgba(255, 214, 10, 0.12) 0%, rgba(22, 22, 23, 0.9) 100%);
-    border-color: rgba(255, 214, 10, 0.3);
+    background: #fffdf0;
+    border-color: #ffcc00;
 }
 
 .result-card.high {
-    background: linear-gradient(135deg, rgba(255, 69, 58, 0.12) 0%, rgba(22, 22, 23, 0.9) 100%);
-    border-color: rgba(255, 69, 58, 0.3);
+    background: #fff2f1;
+    border-color: #ff3b30;
 }
 
 .result-title {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: #86868b;
+    color: #6e6e73;
     margin-bottom: 4px;
+    font-weight: 600;
 }
 
 .result-value {
@@ -169,25 +176,26 @@ label {
     font-weight: 700;
     letter-spacing: -0.02em;
     line-height: 1;
+    color: #1d1d1f;
 }
 
 .status-badge {
     font-size: 1.1rem;
     font-weight: 600;
-    padding: 8px 18px;
+    padding: 8px 20px;
     border-radius: 980px;
     display: inline-block;
 }
 
-.status-badge.low { background: rgba(48, 209, 88, 0.2); color: #30d158; }
-.status-badge.medium { background: rgba(255, 214, 10, 0.2); color: #ffd60a; }
-.status-badge.high { background: rgba(255, 69, 58, 0.2); color: #ff453a; }
+.status-badge.low { background: #34c759; color: #ffffff; }
+.status-badge.medium { background: #ffcc00; color: #1d1d1f; }
+.status-badge.high { background: #ff3b30; color: #ffffff; }
 </style>
 """
-st.markdown(apple_css, unsafe_allow_html=True)
+st.markdown(apple_light_css, unsafe_allow_html=True)
 
 # ==========================================
-# 4. MODEL LOADING (DYNAMIC PATH FIX)
+# 4. MODEL LOADING
 # ==========================================
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MODEL_PATH = os.path.join(BASE_DIR, "churn_model_pipeline.joblib")
@@ -209,39 +217,77 @@ st.markdown('<div class="hero-title">Customer Churn Intelligence.</div>', unsafe
 st.markdown('<div class="hero-subtitle">Proactive risk analysis powered by predictive machine learning.</div>', unsafe_allow_html=True)
 
 # ==========================================
-# 6. INPUT INTERFACE (THREE COLUMNS)
+# 6. INPUT INTERFACE WITH HINGLISH HELPER TEXTS
 # ==========================================
 col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown('<div class="section-header">Account Profile</div>', unsafe_allow_html=True)
+    
     gender = st.selectbox("Gender", ["Male", "Female"])
+    st.markdown('<div class="hinglish-subtext">(Customer Male hai ya Female)</div>', unsafe_allow_html=True)
+    
     SeniorCitizen = st.selectbox("Senior Citizen Status", [0, 1])
+    st.markdown('<div class="hinglish-subtext">(Kya customer senior citizen hai? 1 = Haan, 0 = Nahi)</div>', unsafe_allow_html=True)
+    
     Partner = st.selectbox("Partner", ["Yes", "No"])
+    st.markdown('<div class="hinglish-subtext">(Kya customer married ya partner ke sath hai?)</div>', unsafe_allow_html=True)
+    
     Dependents = st.selectbox("Dependents", ["Yes", "No"])
+    st.markdown('<div class="hinglish-subtext">(Kya customer par koi family dependent hai?)</div>', unsafe_allow_html=True)
+    
     tenure = st.number_input("Tenure (Months)", min_value=0, max_value=100, value=12)
+    st.markdown('<div class="hinglish-subtext">(Customer kitne mahine se hamari service use kar raha hai)</div>', unsafe_allow_html=True)
 
 with col2:
     st.markdown('<div class="section-header">Subscriptions</div>', unsafe_allow_html=True)
+    
     PhoneService = st.selectbox("Phone Service", ["Yes", "No"])
+    st.markdown('<div class="hinglish-subtext">(Kya Calling Service active hai?)</div>', unsafe_allow_html=True)
+    
     MultipleLines = st.selectbox("Multiple Lines", ["No phone service", "No", "Yes"])
+    st.markdown('<div class="hinglish-subtext">(Kya ek se zyada phone lines chal rahi hain?)</div>', unsafe_allow_html=True)
+    
     InternetService = st.selectbox("Internet Service", ["DSL", "Fiber optic", "No"])
+    st.markdown('<div class="hinglish-subtext">(Kon sa internet Connection hai - DSL ya Fiber?)</div>', unsafe_allow_html=True)
+    
     OnlineSecurity = st.selectbox("Online Security", ["No internet service", "No", "Yes"])
+    st.markdown('<div class="hinglish-subtext">(Extra security & Antivirus protection pack hai?)</div>', unsafe_allow_html=True)
+    
     OnlineBackup = st.selectbox("Online Backup", ["No internet service", "No", "Yes"])
+    st.markdown('<div class="hinglish-subtext">(Data cloud backup service li hai?)</div>', unsafe_allow_html=True)
+    
     DeviceProtection = st.selectbox("Device Protection", ["No internet service", "No", "Yes"])
+    st.markdown('<div class="hinglish-subtext">(Hardware ya Device Insurance liya hai?)</div>', unsafe_allow_html=True)
+    
     TechSupport = st.selectbox("Tech Support", ["No internet service", "No", "Yes"])
+    st.markdown('<div class="hinglish-subtext">(VIP/Fast Customer Care Help Option active hai?)</div>', unsafe_allow_html=True)
+    
     StreamingTV = st.selectbox("Streaming TV", ["No internet service", "No", "Yes"])
+    st.markdown('<div class="hinglish-subtext">(TV Channels streaming service subscription hai?)</div>', unsafe_allow_html=True)
+    
     StreamingMovies = st.selectbox("Streaming Movies", ["No internet service", "No", "Yes"])
+    st.markdown('<div class="hinglish-subtext">(Movies streaming subscription active hai?)</div>', unsafe_allow_html=True)
 
 with col3:
     st.markdown('<div class="section-header">Billing Details</div>', unsafe_allow_html=True)
+    
     Contract = st.selectbox("Contract Type", ["Month-to-month", "One year", "Two year"])
+    st.markdown('<div class="hinglish-subtext">(Plan kaisa hai - Har mahine ka ya 1-2 saal ka contract?)</div>', unsafe_allow_html=True)
+    
     PaperlessBilling = st.selectbox("Paperless Billing", ["Yes", "No"])
+    st.markdown('<div class="hinglish-subtext">(Bill Online email/app par aata hai ya physical paper?)</div>', unsafe_allow_html=True)
+    
     PaymentMethod = st.selectbox("Payment Method", [
         "Electronic check", "Mailed check", "Bank transfer (automatic)", "Credit card (automatic)"
     ])
+    st.markdown('<div class="hinglish-subtext">(Customer payment kis tareeqe se karta hai)</div>', unsafe_allow_html=True)
+    
     MonthlyCharges = st.number_input("Monthly Charges ($)", min_value=0.0, value=70.0)
+    st.markdown('<div class="hinglish-subtext">(Customer har mahine kitna bill pay karta hai)</div>', unsafe_allow_html=True)
+    
     TotalCharges = st.text_input("Total Charges ($)", value="840.0")
+    st.markdown('<div class="hinglish-subtext">(Ab tak kul kitna payment diya hai customer ne)</div>', unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
 
@@ -279,23 +325,23 @@ if st.button("Analyze Risk Profile"):
     if prob >= 0.60:
         risk_class = "high"
         badge_text = "High Churn Risk"
-        advice = "Immediate retention action required."
+        advice = "Customer company chhod sakta hai. Immediately offer discounts or assistance!"
     elif prob >= 0.40:
         risk_class = "medium"
         badge_text = "Moderate Churn Risk"
-        advice = "Consider offering contract incentives."
+        advice = "Customer confuse hai. Consider offering a better long-term plan."
     else:
         risk_class = "low"
         badge_text = "Low Churn Risk"
-        advice = "Customer relationship is stable."
+        advice = "Customer happy hai. Connection safe and stable."
 
-    # Apple-style Output Card Rendering
+    # Apple Light Output Card Rendering
     result_html = f"""
     <div class="result-card {risk_class}">
         <div>
             <div class="result-title">Predicted Churn Risk</div>
             <div class="result-value">{prob_percentage}</div>
-            <div style="color: #a1a1a6; margin-top: 8px; font-size: 0.95rem;">{advice}</div>
+            <div style="color: #6e6e73; margin-top: 8px; font-size: 1rem; font-weight: 500;">{advice}</div>
         </div>
         <div>
             <span class="status-badge {risk_class}">{badge_text}</span>
