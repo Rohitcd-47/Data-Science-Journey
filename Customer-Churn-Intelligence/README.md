@@ -8,6 +8,16 @@ This project provides an end-to-end Machine Learning pipeline and an interactive
 
 ---
 
+## Model Performance & Accuracy
+
+Because misclassifying a churning customer as "safe" leads to lost revenue, model evaluation prioritized minimizing False Negatives alongside overall accuracy:
+
+* **Overall Model Accuracy:** ~80%
+* **Primary Optimization Metric:** Recall & ROC-AUC (Ensuring high sensitivity toward at-risk customers)
+* **Baseline Comparison:** Outperformed standard dummy baselines by capturing high-risk churn signals effectively across complex feature interactions.
+
+---
+
 ## Core Features & Business Value
 
 * **Automated Data Pipeline:** Handles raw customer data ingestion, type casting, missing value handling, and categorical encoding.
@@ -30,7 +40,15 @@ This project provides an end-to-end Machine Learning pipeline and an interactive
 
 ## Key Terms & Domain Guide (In Hinglish)
 
-To help recruiters and non-technical stakeholders understand the input fields used in the prediction model, here is a simple breakdown of key telecom domain terms:
+To help recruiters and non-technical stakeholders understand the target output and input fields used in the prediction model, here is a simple breakdown of key telecom domain terms:
+
+### What is Churn?
+* **Meaning:** Jab koi customer aapki company ki service ya subscription use karna band kar deta hai aur kisi competitor ke paas chala jata hai ya plan cancel kar deta hai, toh use **Churn** kehte hain.
+* **Example:** Agar aap Jio ya Airtel ka SIM card use kar rahe the aur aapne service se dissatisfied hokar Port-out karva liya ya recharge karna band kar diya, toh company ke liye aap **Churned Customer** ho gaye.
+
+---
+
+### Input Features Breakdown
 
 ### 1. Dependents
 * **Meaning:** Kya customer ke upar koi family member financially dependent hai (jaise bachhe ya elderly parents)?
