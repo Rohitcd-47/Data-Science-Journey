@@ -40,156 +40,138 @@ st.set_page_config(
 )
 
 # ==========================================
-# 3. APPLE WHITE DESIGN SYSTEM INJECTION (CSS)
+# 3. FULL APPLE LIGHT THEME CSS OVERRIDE
 # ==========================================
 apple_light_css = """
 <style>
-/* Import San Francisco / Inter System Font */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-html, body, [class*="css"] {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Inter", sans-serif !important;
-    background-color: #f5f5f7 !important;
-    color: #1d1d1f !important;
+/* Force entire app canvas to Apple Light Gray */
+.stApp, [data-testid="stAppViewContainer"] {
+    background-color: #F5F5F7 !important;
+    color: #1D1D1F !important;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif !important;
 }
 
-/* Background & Padding */
+/* Container Padding */
 .main .block-container {
-    padding-top: 2rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 2.5rem !important;
+    padding-bottom: 4rem !important;
     max-width: 1150px !important;
 }
 
-/* Apple Light Header Style */
+/* Main Hero Typography Fix */
 .hero-title {
-    font-size: 3rem !important;
+    font-size: 2.8rem !important;
     font-weight: 700 !important;
-    letter-spacing: -0.015em !important;
-    color: #1d1d1f !important;
-    margin-bottom: 0.2rem !important;
+    letter-spacing: -0.02em !important;
+    color: #1D1D1F !important;
+    margin-bottom: 0.3rem !important;
 }
 
 .hero-subtitle {
-    font-size: 1.15rem !important;
-    color: #86868b !important;
+    font-size: 1.1rem !important;
+    color: #6E6E73 !important;
     font-weight: 400 !important;
     margin-bottom: 2rem !important;
 }
 
-/* Apple Light Glass Cards */
+/* Glassmorphism Column Cards */
 div[data-testid="stColumn"] {
-    background: #ffffff !important;
-    border: 1px solid rgba(0, 0, 0, 0.08) !important;
-    border-radius: 20px !important;
+    background: #FFFFFF !important;
+    border: 1px solid #E5E5EA !important;
+    border-radius: 18px !important;
     padding: 24px !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03) !important;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04) !important;
 }
 
-div[data-testid="stColumn"]:hover {
-    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06) !important;
-}
-
-/* Form Section Headers */
+/* Section Subheaders */
 .section-header {
-    font-size: 1.05rem !important;
-    font-weight: 600 !important;
-    color: #0071e3 !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    color: #0071E3 !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.05em !important;
-    margin-bottom: 16px !important;
+    letter-spacing: 0.06em !important;
+    margin-bottom: 18px !important;
 }
 
-/* Apple Blue Primary Button */
-div.stButton > button {
-    background: #0071e3 !important;
-    color: #ffffff !important;
-    border-radius: 980px !important;
-    padding: 14px 28px !important;
-    font-size: 1.05rem !important;
+/* Force Light Styling on Streamlit Widgets (Selectbox, Inputs) */
+div[data-baseweb="select"] > div, 
+div[data-baseweb="base-input"] {
+    background-color: #F5F5F7 !important;
+    border: 1px solid #D2D2D7 !important;
+    border-radius: 10px !important;
+    color: #1D1D1F !important;
+}
+
+div[data-baseweb="select"] span, 
+input {
+    color: #1D1D1F !important;
     font-weight: 500 !important;
-    border: none !important;
-    transition: all 0.2s ease-in-out !important;
-    box-shadow: 0 4px 14px 0 rgba(0, 113, 227, 0.3) !important;
-    width: 100% !important;
 }
 
-div.stButton > button:hover {
-    background: #0077ed !important;
-    transform: scale(1.01) !important;
-    box-shadow: 0 6px 20px 0 rgba(0, 113, 227, 0.4) !important;
+/* Dropdown Menu Popup Styling */
+div[data-baseweb="popover"] div {
+    background-color: #FFFFFF !important;
+    color: #1D1D1F !important;
 }
 
-/* Label & Subtext styling */
+/* Labels and Hinglish Subtitles */
 label {
-    color: #1d1d1f !important;
-    font-size: 0.9rem !important;
+    color: #1D1D1F !important;
+    font-size: 0.88rem !important;
     font-weight: 600 !important;
 }
 
 .hinglish-subtext {
-    font-size: 0.8rem !important;
-    color: #6e6e73 !important;
-    margin-top: -8px !important;
+    font-size: 0.78rem !important;
+    color: #6E6E73 !important;
+    margin-top: -6px !important;
     margin-bottom: 14px !important;
     font-style: italic;
 }
 
-/* Output Result Cards (Light Theme) */
+/* Primary Action Button */
+div.stButton > button {
+    background: #0071E3 !important;
+    color: #FFFFFF !important;
+    border-radius: 980px !important;
+    padding: 14px 28px !important;
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+    border: none !important;
+    box-shadow: 0 4px 14px rgba(0, 113, 227, 0.3) !important;
+    width: 100% !important;
+    transition: all 0.2s ease !important;
+}
+
+div.stButton > button:hover {
+    background: #0077ED !important;
+    transform: translateY(-1px) !important;
+}
+
+/* Output Cards */
 .result-card {
-    border-radius: 20px;
-    padding: 28px;
-    margin-top: 24px;
-    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 18px;
+    padding: 24px 30px;
+    margin-top: 20px;
+    border: 1px solid #E5E5EA;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
 }
 
-.result-card.low {
-    background: #f2faf1;
-    border-color: #34c759;
-}
+.result-card.low { background: #EAF8ED; border-color: #34C759; }
+.result-card.medium { background: #FFF9E6; border-color: #FFCC00; }
+.result-card.high { background: #FDECEB; border-color: #FF3B30; }
 
-.result-card.medium {
-    background: #fffdf0;
-    border-color: #ffcc00;
-}
-
-.result-card.high {
-    background: #fff2f1;
-    border-color: #ff3b30;
-}
-
-.result-title {
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: #6e6e73;
-    margin-bottom: 4px;
-    font-weight: 600;
-}
-
-.result-value {
-    font-size: 3.2rem;
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1;
-    color: #1d1d1f;
-}
-
-.status-badge {
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 8px 20px;
-    border-radius: 980px;
-    display: inline-block;
-}
-
-.status-badge.low { background: #34c759; color: #ffffff; }
-.status-badge.medium { background: #ffcc00; color: #1d1d1f; }
-.status-badge.high { background: #ff3b30; color: #ffffff; }
+.result-title { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; color: #6E6E73; font-weight: 600; }
+.result-value { font-size: 3rem; font-weight: 700; color: #1D1D1F; line-height: 1; margin-top: 4px; }
+.status-badge { font-size: 1rem; font-weight: 600; padding: 8px 18px; border-radius: 980px; }
+.status-badge.low { background: #34C759; color: #FFFFFF; }
+.status-badge.medium { background: #FFCC00; color: #1D1D1F; }
+.status-badge.high { background: #FF3B30; color: #FFFFFF; }
 </style>
 """
 st.markdown(apple_light_css, unsafe_allow_html=True)
@@ -217,7 +199,7 @@ st.markdown('<div class="hero-title">Customer Churn Intelligence.</div>', unsafe
 st.markdown('<div class="hero-subtitle">Proactive risk analysis powered by predictive machine learning.</div>', unsafe_allow_html=True)
 
 # ==========================================
-# 6. INPUT INTERFACE WITH HINGLISH HELPER TEXTS
+# 6. INPUT INTERFACE
 # ==========================================
 col1, col2, col3 = st.columns(3)
 
@@ -237,7 +219,7 @@ with col1:
     st.markdown('<div class="hinglish-subtext">(Kya customer par koi family dependent hai?)</div>', unsafe_allow_html=True)
     
     tenure = st.number_input("Tenure (Months)", min_value=0, max_value=100, value=12)
-    st.markdown('<div class="hinglish-subtext">(Customer kitne mahine se hamari service use kar raha hai)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="hinglish-subtext">(Customer kitne mahine se service use kar raha hai)</div>', unsafe_allow_html=True)
 
 with col2:
     st.markdown('<div class="section-header">Subscriptions</div>', unsafe_allow_html=True)
@@ -249,7 +231,7 @@ with col2:
     st.markdown('<div class="hinglish-subtext">(Kya ek se zyada phone lines chal rahi hain?)</div>', unsafe_allow_html=True)
     
     InternetService = st.selectbox("Internet Service", ["DSL", "Fiber optic", "No"])
-    st.markdown('<div class="hinglish-subtext">(Kon sa internet Connection hai - DSL ya Fiber?)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="hinglish-subtext">(Kaun sa internet connection hai - DSL ya Fiber?)</div>', unsafe_allow_html=True)
     
     OnlineSecurity = st.selectbox("Online Security", ["No internet service", "No", "Yes"])
     st.markdown('<div class="hinglish-subtext">(Extra security & Antivirus protection pack hai?)</div>', unsafe_allow_html=True)
@@ -261,10 +243,10 @@ with col2:
     st.markdown('<div class="hinglish-subtext">(Hardware ya Device Insurance liya hai?)</div>', unsafe_allow_html=True)
     
     TechSupport = st.selectbox("Tech Support", ["No internet service", "No", "Yes"])
-    st.markdown('<div class="hinglish-subtext">(VIP/Fast Customer Care Help Option active hai?)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="hinglish-subtext">(VIP/Fast Customer Care Help option active hai?)</div>', unsafe_allow_html=True)
     
     StreamingTV = st.selectbox("Streaming TV", ["No internet service", "No", "Yes"])
-    st.markdown('<div class="hinglish-subtext">(TV Channels streaming service subscription hai?)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="hinglish-subtext">(TV channels streaming subscription hai?)</div>', unsafe_allow_html=True)
     
     StreamingMovies = st.selectbox("Streaming Movies", ["No internet service", "No", "Yes"])
     st.markdown('<div class="hinglish-subtext">(Movies streaming subscription active hai?)</div>', unsafe_allow_html=True)
@@ -273,10 +255,10 @@ with col3:
     st.markdown('<div class="section-header">Billing Details</div>', unsafe_allow_html=True)
     
     Contract = st.selectbox("Contract Type", ["Month-to-month", "One year", "Two year"])
-    st.markdown('<div class="hinglish-subtext">(Plan kaisa hai - Har mahine ka ya 1-2 saal ka contract?)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="hinglish-subtext">(Plan kaisa hai - Monthly ya 1-2 saal ka contract?)</div>', unsafe_allow_html=True)
     
     PaperlessBilling = st.selectbox("Paperless Billing", ["Yes", "No"])
-    st.markdown('<div class="hinglish-subtext">(Bill Online email/app par aata hai ya physical paper?)</div>', unsafe_allow_html=True)
+    st.markdown('<div class="hinglish-subtext">(Bill online email/app par aata hai ya physical paper?)</div>', unsafe_allow_html=True)
     
     PaymentMethod = st.selectbox("Payment Method", [
         "Electronic check", "Mailed check", "Bank transfer (automatic)", "Credit card (automatic)"
@@ -317,11 +299,9 @@ if st.button("Analyze Risk Profile"):
         'TotalCharges': TotalCharges
     }])
 
-    # Probability Score
     prob = pipeline.predict_proba(input_data)[0, 1]
     prob_percentage = f"{prob * 100:.1f}%"
     
-    # State Evaluation
     if prob >= 0.60:
         risk_class = "high"
         badge_text = "High Churn Risk"
@@ -335,13 +315,12 @@ if st.button("Analyze Risk Profile"):
         badge_text = "Low Churn Risk"
         advice = "Customer happy hai. Connection safe and stable."
 
-    # Apple Light Output Card Rendering
     result_html = f"""
     <div class="result-card {risk_class}">
         <div>
             <div class="result-title">Predicted Churn Risk</div>
             <div class="result-value">{prob_percentage}</div>
-            <div style="color: #6e6e73; margin-top: 8px; font-size: 1rem; font-weight: 500;">{advice}</div>
+            <div style="color: #6E6E73; margin-top: 8px; font-size: 0.95rem; font-weight: 500;">{advice}</div>
         </div>
         <div>
             <span class="status-badge {risk_class}">{badge_text}</span>
