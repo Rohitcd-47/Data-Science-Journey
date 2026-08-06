@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import os
 from sklearn.base import BaseEstimator, TransformerMixin
 
 # ==========================================
@@ -186,11 +187,14 @@ label {
 st.markdown(apple_css, unsafe_allow_html=True)
 
 # ==========================================
-# 4. MODEL LOADING
+# 4. MODEL LOADING (DYNAMIC PATH FIX)
 # ==========================================
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.path.join(BASE_DIR, "churn_model_pipeline.joblib")
+
 @st.cache_resource
 def load_pipeline():
-    return joblib.load("churn_model_pipeline.joblib")
+    return joblib.load(MODEL_PATH)
 
 try:
     pipeline = load_pipeline()
